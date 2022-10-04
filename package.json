@@ -1,0 +1,29 @@
+{
+  "name": "guiapress",
+  "version": "1.0.0",
+  "description": "Criação do primeiro blog com node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gelsondeveloper/guiaPress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gelsondeveloper/guiaPress/issues"
+  },
+  "homepage": "https://github.com/gelsondeveloper/guiaPress#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.23.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
