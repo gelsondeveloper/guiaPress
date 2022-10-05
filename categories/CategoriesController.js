@@ -1,12 +1,26 @@
 const express = require("express");
+const Category = require("./Category");
+const slugify = require("slugify");
 const router = express.Router();
 
-router.get("/categories", (req, res)=>{
-res.send("Rota de Categorias");
+router.get("/admin/categories/new", (req, res) => {
+    res.render("admin/categories/new");
 });
 
-router.get("/admin/categories/new", (req, res) => {
-res.send("ROta para cirar uma nova categoria!");
+router.post("/categories/save", (req, res) =>{
+    var title = req.body.title;
+    res.send("Enviando com sucesso "+title);
+   
+    // if (title != undefined) {
+    //     Category.create({
+    //         title: title,
+    //         slug: slugify(title)
+    //     }).then(() => {
+    //         res.redirect("/");
+    //     })
+    // } else {
+    //     res.redirect("admin/categories/new");
+    // }
 });
 
 module.exports = router;
